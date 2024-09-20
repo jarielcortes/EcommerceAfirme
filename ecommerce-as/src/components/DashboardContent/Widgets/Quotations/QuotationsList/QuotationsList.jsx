@@ -1,8 +1,16 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import { useState, useEffect } from 'react';
 import QuotationsListItem from '../QuotationListItem/QuotationListItem';
 import './QuotationsList.css';
 
 export function QuotationsList({data}) {
+
+  //////////////////
+  // Hooks
+  /////////////  ///
 
   const [currentPage, setCurrentPage] = useState(1); // Current page - Default value = 1
   const [itemsPerPage] = useState(5); // Number of items per page - Default value = 5
@@ -11,6 +19,10 @@ export function QuotationsList({data}) {
   useEffect(() => {
     setQuotations(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
   }, [data]);
+
+  //////////////////
+  // Functions
+  /////////////  ///
 
   // Get current items
   const indexOfLastItem = currentPage * itemsPerPage; // Index of the last item in the current page

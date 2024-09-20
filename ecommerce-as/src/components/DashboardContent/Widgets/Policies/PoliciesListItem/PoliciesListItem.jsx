@@ -1,3 +1,7 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import React from 'react';
 import { formatCurrency } from '../../../../../utils/Format';
 import './PoliciesListItem.css';

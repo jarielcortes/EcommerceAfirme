@@ -1,8 +1,17 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import { useState, useEffect } from 'react';
 import PoliciesListItem from '../PoliciesListItem/PoliciesListItem';
 import './PoliciesList.css';
 
 export function PoliciesList({data}) {
+
+    //////////////////
+    // Hooks
+    /////////////  ///
+
     const [currentPage, setCurrentPage] = useState(1); // Current page - Default value = 1
     const [itemsPerPage] = useState(5); // Number of items per page - Default value = 5
     const [policies, setPolicies] = useState(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
@@ -10,6 +19,10 @@ export function PoliciesList({data}) {
     useEffect(() => {
       setPolicies(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
     }, [data]);
+
+    //////////////////
+    // Functions
+    /////////////  ///
 
     // Get current items
     const indexOfLastItem = currentPage * itemsPerPage; // Index of the last item in the current page

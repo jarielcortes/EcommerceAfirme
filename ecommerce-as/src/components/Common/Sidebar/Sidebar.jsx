@@ -1,3 +1,7 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import React, { useState, useEffect } from 'react';
 import SidebarItem from '../SidebarItem/SidebarItem';
 import { Bars4Icon } from '@heroicons/react/24/outline'
@@ -6,6 +10,10 @@ import "./Sidebar.css";
 import logoAfirme from '../../../assets/logoAfirme.png';
 
 function Sidebar({ selectedItem, onSelectItem }) {
+
+    //////////////////
+    // Hooks
+    /////////////  ///
     
     const [menuItems, setMenuItems] = useState([]);
 
@@ -15,6 +23,10 @@ function Sidebar({ selectedItem, onSelectItem }) {
     }, []); //Execute once at render
 
     const [isCollapsed, setIsCollapsed] = useState(false);
+
+    //////////////////
+    // Functions
+    /////////////  ///
 
     const handleToggleSidebar = () => {
         setIsCollapsed(!isCollapsed);

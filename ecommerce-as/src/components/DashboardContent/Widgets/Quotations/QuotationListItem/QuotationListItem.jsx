@@ -1,8 +1,13 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import React from 'react';
 import './QuotationsListItem.css';
 
 function QuotationsListItem({ quotation, client, status }) {
 
+    // Changes the color of the badge according to the status
     let colorClassBadge;
     switch (status) {
       case "Cancelada":

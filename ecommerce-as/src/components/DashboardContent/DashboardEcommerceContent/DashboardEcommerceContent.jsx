@@ -1,3 +1,7 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import React from 'react';
 import { useState, useEffect } from 'react';
 import DashboardCard from '../Widgets/DashboardCard/DashboardCard';
@@ -9,6 +13,10 @@ import DataService from '../../../services/DataService';
 import './DashboardEcommerceContent.css';
 
 function DashboardEcommerceContent() {
+
+    //////////////////
+    // Hooks
+    /////////////  ///
 
     const [salesData, setSalesData] = useState([]);
     const [quotationsData, setQuotationsData] = useState([]);

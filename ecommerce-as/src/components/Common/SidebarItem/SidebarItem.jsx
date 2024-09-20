@@ -1,8 +1,16 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import React from 'react';
 import { getMenuIconMappingByLabel } from '../../../utils/Menu';
 import './SidebarItem.css';
 
 function SidebarItem({ icon, label, isSelected, onClick, isCollapsed }) {
+
+    //////////////////
+    // Functions
+    /////////////  ///
 
     // Retrieve the icon component based on the icon prop
     const IconComponent = getMenuIconMappingByLabel(icon);

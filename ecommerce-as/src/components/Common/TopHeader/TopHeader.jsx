@@ -1,7 +1,12 @@
+//////////////////
+// Imports
+/////////////  ///
+
 import React from 'react';
 import './TopHeader.css';
 
 function TopHeader() {
+  
   return (
     <div className="flex justify-between items-center bg-white p-4 shadow-md">
       <div>
