@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PoliciesListItem from '../PoliciesListItem/PoliciesListItem';
 import './PoliciesList.css';
 
-export function PoliciesList() {
+export function PoliciesList({data}) {
     const [currentPage, setCurrentPage] = useState(1); // Current page - Default value = 1
     const [itemsPerPage] = useState(5); // Number of items per page - Default value = 5
-
-    const policies = [
-      { text: "Confirm order update", status: "urgent" },
-      { text: "Finish shipping update", status: "urgent" },
-      { text: "Create new order", status: "new" },
-      { text: "Update payment report", status: "default" }
-    ];
+    const [policies, setPolicies] = useState(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
+  
+    useEffect(() => {
+      setPolicies(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
+    }, [data]);
 
     // Get current items
     const indexOfLastItem = currentPage * itemsPerPage; // Index of the last item in the current page
@@ -23,15 +21,18 @@ export function PoliciesList() {
 
     return (
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Recent Activity</h2>
-          <div className="space-y-4">
+          <h2 className="text-xl font-semibold mb-3">POLIZAS</h2>
+          <div className="space-y-1">
             {/* Displays current items for selected page */}
             {currentItems.map((policy, index) => (
-              <PoliciesListItem
-                key={index}
-                text={policy.text}
-                status={policy.status}
-              />
+              <div key={index} className="hover:bg-gray-100 p-1">
+                <PoliciesListItem
+                  key={index}
+                  policy={policy.policy_number}
+                  client={policy.client}
+                  amount={policy.total_premium}
+                />
+              </div>
             ))}
           </div>
           <div className="flex justify-center mt-4">

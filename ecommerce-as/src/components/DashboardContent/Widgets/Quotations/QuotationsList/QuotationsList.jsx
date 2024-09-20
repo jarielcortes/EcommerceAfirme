@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import QuotationsListItem from '../QuotationListItem/QuotationListItem';
 import './QuotationsList.css';
 
-export function QuotationsList() {
+export function QuotationsList({data}) {
+
   const [currentPage, setCurrentPage] = useState(1); // Current page - Default value = 1
   const [itemsPerPage] = useState(5); // Number of items per page - Default value = 5
-
-  const quotations = [
-    { text: "Waiting for order #12345", time: "4:39 PM" },
-    { text: "Customer support id#22234", time: "11:07 AM" },
-    { text: "New quotation request", time: "9:15 AM" },
-    { text: "Order confirmation", time: "8:30 AM" },
-    { text: "Payment received", time: "7:45 AM" },
-    { text: "Shipping update", time: "6:55 AM" },
-    { text: "Product out of stock", time: "6:10 AM" },
-    { text: "Delivery delay", time: "5:25 AM" },
-    { text: "Refund request", time: "4:40 AM" },
-    { text: "Order cancellation", time: "3:55 AM" },
-  ];
+  const [quotations, setQuotations] = useState(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
+  
+  useEffect(() => {
+    setQuotations(Array.isArray(data) ? data : []); // Check if array is present, otherwise set to empty array
+  }, [data]);
 
   // Get current items
   const indexOfLastItem = currentPage * itemsPerPage; // Index of the last item in the current page
@@ -29,15 +22,17 @@ export function QuotationsList() {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4">Inbox</h2>
-      <div className="space-y-4">
+      <h2 className="text-xl font-semibold mb-3">COTIZACIONES</h2>
+      <div className="space-y-1">
         {/* Displays current items for selected page */}
         {currentItems.map((quotation, index) => (
-          <QuotationsListItem
-            key={index}
-            text={quotation.text}
-            time={quotation.time}
-          />
+          <div key={index} className="hover:bg-gray-100 p-1 rounded-lg">
+            <QuotationsListItem
+              quotation={quotation.quotation_number}
+              client={quotation.client}
+              status={quotation.status}
+            />
+          </div>
         ))}
       </div>
       <div className="flex justify-center mt-4">

@@ -1,0 +1,54 @@
+[
+    {
+        "month": "Enero",
+        "data": {
+            "Polizas": {
+                "sales": 10,
+                "label": "Polizas"
+            },
+            "Cotizaciones": {
+                "sales": 20,
+                "label": "Cotizaciones"
+            }
+        }
+    },
+    {
+        "month": "Febrero",
+        "data": {
+            "Polizas": {
+                "sales": 15,
+                "label": "Polizas"
+            },
+            "Cotizaciones": {
+                "sales": 25,
+                "label": "Cotizaciones"
+            }
+        }
+    },
+    {
+        "month": "Marzo",
+        "data": {
+            "Polizas": {
+                "sales": 12,
+                "label": "Polizas"
+            },
+            "Cotizaciones": {
+                "sales": 30,
+                "label": "Cotizaciones"
+            }
+        }
+    },
+    {
+        "month": "Abril",
+        "data": {
+            "Polizas": {
+                "sales": 18,
+                "label": "Polizas"
+            },
+            "Cotizaciones": {
+                "sales": 22,
+                "label": "Cotizaciones"
+            }
+        }
+    }
+]

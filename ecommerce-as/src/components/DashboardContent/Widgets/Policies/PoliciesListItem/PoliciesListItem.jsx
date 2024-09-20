@@ -1,24 +1,16 @@
 import React from 'react';
+import { formatCurrency } from '../../../../../utils/Format';
 import './PoliciesListItem.css';
 
-function PoliciesListItem({ text, status }) {
-    let colorClassBadge;
-
-    switch (status) {
-      case "urgent":
-        colorClassBadge = "badge-error";
-        break;
-      case "new":
-        colorClassBadge = "badge-success";
-        break;
-      default:
-        colorClassBadge = "badge-success";
-    }
+function PoliciesListItem({ policy, client, amount }) {
   
     return (
       <div className="flex justify-between items-center">
-        <p className="text-gray-600">{text}</p>
-        <span className={`badge ${colorClassBadge}`}>{status.toUpperCase()}</span>
+        <p className="text-gray-600">
+          <span className="font-bold text-gray-500">{policy}</span>
+          <span className="ml-4">{client}</span>
+        </p>
+        <span className="text-gray-500 text-sm">{formatCurrency(amount)}</span>
       </div>
     );
   }

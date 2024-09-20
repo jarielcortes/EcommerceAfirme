@@ -1,11 +1,30 @@
 import React from 'react';
 import './QuotationsListItem.css';
 
-function QuotationsListItem({ text, time }) {
+function QuotationsListItem({ quotation, client, status }) {
+
+    let colorClassBadge;
+    switch (status) {
+      case "Cancelada":
+        colorClassBadge = "badge-warning";
+        break;
+      case "Emitida":
+        colorClassBadge = "badge-success";
+        break;
+        case "Activa":
+          colorClassBadge = "badge-info";
+          break;
+      default:
+        colorClassBadge = "badge-info";
+    }
+
     return (
       <div className="flex justify-between items-center">
-        <p>{text}</p>
-        <span className="text-gray-500 text-sm">{time}</span>
+      <p className="text-gray-600">
+        <span className="font-bold text-gray-500">{quotation}</span>
+        <span className="ml-4">{client}</span>
+      </p>
+      <span className={`badge ${colorClassBadge} !text-white`}>{status.toUpperCase()}</span>
       </div>
     );
   }
