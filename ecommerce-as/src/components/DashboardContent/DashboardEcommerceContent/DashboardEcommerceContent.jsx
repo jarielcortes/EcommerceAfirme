@@ -50,19 +50,19 @@ function DashboardEcommerceContent() {
 
     return (
       <div className="p-6 grid grid-cols-1 2xl:grid-cols-3 gap-6">
-      <div className="col-span-2 space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <DashboardCard title="Cotizaciones Vigentes" value={summarySalesData.active_quotations} color="info" />
-        <DashboardCard title="Polizas Vigentes" value={summarySalesData.active_policies} color="success" />
-        <DashboardCard title="Polizas Canceladas" value={summarySalesData.canceled_policies} color="error" />
+        <div className="col-span-2 space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <DashboardCard title="Cotizaciones Vigentes" value={summarySalesData.active_quotations} color="info" />
+            <DashboardCard title="Polizas Vigentes" value={summarySalesData.active_policies} color="success" />
+            <DashboardCard title="Polizas Canceladas" value={summarySalesData.canceled_policies} color="error" />
+          </div>
+          <QuotationsList data={quotationsData} />
+          <PoliciesList data={policiesData} />
         </div>
-        <QuotationsList data={quotationsData} />
-        <PoliciesList data={policiesData} />
-      </div>
-      <div className="space-y-6">
-        <SalesChart data={salesData} />
-        <RenewalsChart data={renewalsData} />
-      </div>
+        <div className="space-y-6">
+          <SalesChart data={salesData} />
+          <RenewalsChart data={renewalsData} />
+        </div>
       </div>
     );
   }

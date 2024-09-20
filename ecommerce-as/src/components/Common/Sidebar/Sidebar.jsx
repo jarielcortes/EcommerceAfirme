@@ -55,6 +55,7 @@ function Sidebar({ selectedItem, onSelectItem }) {
                         isSelected={selectedItem === item.label}
                         onClick={() => onSelectItem(item.label)}
                         isCollapsed={isCollapsed}
+                        path={item.path}
                     />
                 ))}
             </nav>

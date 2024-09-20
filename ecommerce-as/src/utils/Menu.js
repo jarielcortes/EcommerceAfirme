@@ -1,23 +1,19 @@
-import { BriefcaseIcon, CubeIcon, GlobeAltIcon, PhoneIcon, PresentationChartBarIcon } from '@heroicons/react/24/outline'
+import { BriefcaseIcon, GlobeAltIcon, PhoneIcon, PresentationChartBarIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const Menu_Dashboard = "Dashboard";
-const Menu_About = "About";
-const Menu_Products = "Products";
-const Menu_Services = "Services";
-const Menu_Contact = "Contact";
+const Menu_Users = "Alta Usuario";
+
+const Default_Route = "/dashboard";
 
 const MENU_ITEMS = [
-    { label: Menu_Dashboard, id: 1, icon: 'presentation-chart-bar' },
-    { label: Menu_About, id: 2, icon: 'cube' },
-    { label: Menu_Products, id: 3, icon: 'globe-alt' },
-    { label: Menu_Services, id: 4, icon: 'briefcase' },
-    { label: Menu_Contact, id: 5, icon: 'phone' },
+    { label: Menu_Dashboard, id: 1, icon: 'presentation-chart-bar', path: '/dashboard' },
+    { label: Menu_Users, id: 2, icon: 'users', path: '/users' },
 ];
 
 // Mapping of hero icons
 const iconMapping = {
     presentation_chart_bar: PresentationChartBarIcon,
-    cube: CubeIcon,
+    users: UsersIcon,
     globe_alt: GlobeAltIcon,
     briefcase: BriefcaseIcon,
     phone: PhoneIcon,
@@ -29,9 +25,11 @@ function getMenuItems() {
 
 function getMenuItemByLabel(label) {
     const items = MENU_ITEMS.find(menuItem => menuItem.label === label);
-    if (!items) {
-        throw new Error('Invalid menu label');
-    }
+    return items;
+}
+
+function getMenuItemByPath(path) {
+    const items = MENU_ITEMS.find(menuItem => menuItem.path === path);
     return items;
 }
 
@@ -44,4 +42,4 @@ function replaceDashesWithUnderscores(str) {
     return str.replace(/-/g, '_');
 }
 
-export { getMenuItems, getMenuItemByLabel, getMenuIconMappingByLabel, Menu_Dashboard, Menu_About, Menu_Products, Menu_Services, Menu_Contact };
+export { getMenuItems, getMenuItemByLabel, getMenuIconMappingByLabel, getMenuItemByPath, Menu_Dashboard, Menu_Users, Default_Route };

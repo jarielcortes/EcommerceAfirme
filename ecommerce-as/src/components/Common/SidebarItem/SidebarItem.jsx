@@ -3,10 +3,11 @@
 /////////////  ///
 
 import React from 'react';
+import { Link } from "react-router-dom";
 import { getMenuIconMappingByLabel } from '../../../utils/Menu';
 import './SidebarItem.css';
 
-function SidebarItem({ icon, label, isSelected, onClick, isCollapsed }) {
+function SidebarItem({ icon, label, isSelected, onClick, isCollapsed, path }) {
 
     //////////////////
     // Functions
@@ -17,7 +18,8 @@ function SidebarItem({ icon, label, isSelected, onClick, isCollapsed }) {
 
     // Show icon and label if the sidebar is expanded, show icon only otherwise
     return (
-      <div
+      <Link
+      to={path}
       className={`flex items-center space-x-3 p-2 hover:bg-gray-200 rounded-lg cursor-pointer ${isSelected ? 'bg-gray-200' : ''}`}
       onClick={onClick}
       >
@@ -25,7 +27,7 @@ function SidebarItem({ icon, label, isSelected, onClick, isCollapsed }) {
       {!isCollapsed && (
         <span className={isSelected ? 'font-bold' : ''}>{label}</span>
       )}
-      </div>
+      </Link>
     );
     }      
   export default SidebarItem;
