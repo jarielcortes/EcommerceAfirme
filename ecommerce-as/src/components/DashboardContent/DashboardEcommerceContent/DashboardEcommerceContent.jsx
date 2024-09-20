@@ -10,9 +10,9 @@ function DashboardEcommerceContent() {
       <div className="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="col-span-2 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <DashboardCard title="Shipped orders" value="67" color="primary" />
-            <DashboardCard title="Pending orders" value="09" color="secondary" />
-            <DashboardCard title="New orders" value="35" color="accent" />
+            <DashboardCard title="Cotizaciones Vigentes" value="67" color="primary" />
+            <DashboardCard title="Polizas Vigentes" value="09" color="secondary" />
+            <DashboardCard title="Polizas Canceladas" value="35" color="accent" />
           </div>
           <QuotationsList />
           <PoliciesList />

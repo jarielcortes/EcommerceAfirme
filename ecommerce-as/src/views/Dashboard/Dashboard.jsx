@@ -18,7 +18,7 @@ function Dashboard(){
     const [selectedSidebarItem, setSelectedSidebarItem] = useState(Menu_Dashboard); //Set default selected menu item
 
     return (
-        <div className="flex h-screen bg-gray-100">
+        <div className="flex h-screen">
           <Sidebar selectedItem={selectedSidebarItem} onSelectItem={setSelectedSidebarItem} />
           <div className="flex flex-col flex-1">
           <TopHeader />

@@ -4,7 +4,9 @@ import './App.css';
 
 function App() {
   return (
-    <Dashboard />
+    <div className="bg-base-200">
+      <Dashboard />
+    </div>
   );
 }
 

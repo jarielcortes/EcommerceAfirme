@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SidebarItem from '../SidebarItem/SidebarItem';
 import { getMenuItems } from '../../../utils/Menu';
 import "./Sidebar.css";
+import logoAfirme from '../../../assets/logoAfirme.png';
 
 function Sidebar({ selectedItem, onSelectItem }) {
     
@@ -14,6 +15,7 @@ function Sidebar({ selectedItem, onSelectItem }) {
 
     return (
         <div className="w-64 bg-white p-5">
+            <img src={logoAfirme} alt="Afirme Logo" className="mx-auto mb-5" />
             <nav className="mt-10">
                 {menuItems.map((item, index) => (
                     <SidebarItem
