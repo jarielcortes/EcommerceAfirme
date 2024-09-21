@@ -1,52 +1,52 @@
 [
-    {
-        "quotation_number": "COT-123456",
-        "client": "John Doe",
-        "status": "Activa"
-    },
-    {
-        "quotation_number": "COT-123457",
-        "client": "John Doe",
-        "status": "Cancelada"
-    },
-    {
-        "quotation_number": "COT-123458",
-        "client": "John Doe",
-        "status": "Emitida"
-    },
-    {
-        "quotation_number": "COT-123459",
-        "client": "John Doe",
-        "status": "Emitida"
-    },
-    {
-        "quotation_number": "COT-123460",
-        "client": "John Doe",
-        "status": "Emitida"
-    },
-    {
-        "quotation_number": "COT-123461",
-        "client": "John Doe",
-        "status": "Emitida"
-    },
-    {
-        "quotation_number": "COT-123462",
-        "client": "John Doe",
-        "status": "Activa"
-    },
-    {
-        "quotation_number": "COT-123463",
-        "client": "John Doe",
-        "status": "Activa"
-    },
-    {
-        "quotation_number": "COT-123464",
-        "client": "John Doe",
-        "status": "Cancelada"
-    },
-    {
-        "quotation_number": "COT-123465",
-        "client": "John Doe",
-        "status": "Cancelada"
-    }
+  {
+    "quotation_number": "COT-123456",
+    "client": "John Doe",
+    "status": "Activa"
+  },
+  {
+    "quotation_number": "COT-123457",
+    "client": "John Doe",
+    "status": "Cancelada"
+  },
+  {
+    "quotation_number": "COT-123458",
+    "client": "John Doe",
+    "status": "Emitida"
+  },
+  {
+    "quotation_number": "COT-123459",
+    "client": "John Doe",
+    "status": "Emitida"
+  },
+  {
+    "quotation_number": "COT-123460",
+    "client": "John Doe",
+    "status": "Emitida"
+  },
+  {
+    "quotation_number": "COT-123461",
+    "client": "John Doe",
+    "status": "Emitida"
+  },
+  {
+    "quotation_number": "COT-123462",
+    "client": "John Doe",
+    "status": "Activa"
+  },
+  {
+    "quotation_number": "COT-123463",
+    "client": "John Doe",
+    "status": "Activa"
+  },
+  {
+    "quotation_number": "COT-123464",
+    "client": "John Doe",
+    "status": "Cancelada"
+  },
+  {
+    "quotation_number": "COT-123465",
+    "client": "John Doe",
+    "status": "Cancelada"
+  }
 ]

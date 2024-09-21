@@ -1,52 +1,52 @@
 [
-    {
-        "policy_number": "POL-123456",
-        "client": "John Doe",
-        "total_premium": 10000
-    },
-    {
-        "policy_number": "POL-123457",
-        "client": "John Doe",
-        "total_premium": 5000
-    },
-    {
-        "policy_number": "POL-123458",
-        "client": "John Doe",
-        "total_premium": 20000
-    },
-    {
-        "policy_number": "POL-123459",
-        "client": "John Doe",
-        "total_premium": 3000
-    },
-    {
-        "policy_number": "POL-123460",
-        "client": "John Doe",
-        "total_premium": 15600
-    },
-    {
-        "policy_number": "POL-123461",
-        "client": "John Doe",
-        "total_premium": 50000
-    },
-    {
-        "policy_number": "POL-123462",
-        "client": "John Doe",
-        "total_premium": 8000
-    },
-    {
-        "policy_number": "POL-123463",
-        "client": "John Doe",
-        "total_premium": 13000
-    },
-    {
-        "policy_number": "POL-123464",
-        "client": "John Doe",
-        "total_premium": 1000
-    },
-    {
-        "policy_number": "POL-123465",
-        "client": "John Doe",
-        "total_premium": 2000
-    }
+  {
+    "policy_number": "POL-123456",
+    "client": "John Doe",
+    "total_premium": 10000
+  },
+  {
+    "policy_number": "POL-123457",
+    "client": "John Doe",
+    "total_premium": 5000
+  },
+  {
+    "policy_number": "POL-123458",
+    "client": "John Doe",
+    "total_premium": 20000
+  },
+  {
+    "policy_number": "POL-123459",
+    "client": "John Doe",
+    "total_premium": 3000
+  },
+  {
+    "policy_number": "POL-123460",
+    "client": "John Doe",
+    "total_premium": 15600
+  },
+  {
+    "policy_number": "POL-123461",
+    "client": "John Doe",
+    "total_premium": 50000
+  },
+  {
+    "policy_number": "POL-123462",
+    "client": "John Doe",
+    "total_premium": 8000
+  },
+  {
+    "policy_number": "POL-123463",
+    "client": "John Doe",
+    "total_premium": 13000
+  },
+  {
+    "policy_number": "POL-123464",
+    "client": "John Doe",
+    "total_premium": 1000
+  },
+  {
+    "policy_number": "POL-123465",
+    "client": "John Doe",
+    "total_premium": 2000
+  }
 ]

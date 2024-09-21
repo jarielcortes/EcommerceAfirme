@@ -1,12 +1,12 @@
 [
-    {
-        "id": "pending_renewal",
-        "label": "Renovaciones Pendientes",
-        "value": 50
-    },
-    {
-        "id": "issued_renewal",
-        "label": "Renovaciones Emitidas",
-        "value": 20
-    }
+  {
+    "id": "pending_renewal",
+    "label": "Renovaciones Pendientes",
+    "value": 50
+  },
+  {
+    "id": "issued_renewal",
+    "label": "Renovaciones Emitidas",
+    "value": 20
+  }
 ]
