@@ -2,7 +2,7 @@
 Reto Digital NAO Afirme
 
 
-## SPRINT 1
+# SPRINT 1
 
 El objetivo del sprint 1 es realizar el entregable del backlog, del roadmap y generar la solucion del portal de ecommerce en base al diseño propuesto.
 
@@ -33,3 +33,23 @@ https://ecommerceafirme.onrender.com/
 Como parte de la arquitectura de la solución, se genera la estructura en la cual se enlistan los componentes comunes, los componentes específicos para cada contenido y los componentes de vistas generales.
 
 Adicional, se generan los arhivos json para simular el consumo de datos y se generan librerías de utilerías así como servicios que permitan operar la aplicación de manera mas independiente y estructurado dependiendo el contexto.
+
+---
+
+
+# SPRINT 2
+
+El objetivo del sprint 2 es implementar la navegación de la aplicación mediante el routing, y generar un formulario que permita registar usuarios en la aplicación, la cual eesta funcionalidad debe de utilizar Redux para el manejo de estados.
+
+### BACKLOG
+
+##### Historias de Usuario
+![image](https://github.com/user-attachments/assets/059dd337-1430-4a36-b180-e848090b4b5c)
+
+
+##### Lista de Requerimientos
+![image](https://github.com/user-attachments/assets/55ff63ea-5e4e-4d4d-b23b-b77b2ba6e46f)
+
+##### Lista Priorizada
+![image](https://github.com/user-attachments/assets/fb4e91c8-840b-4692-b7e7-4e9f270f2a0e)
+
