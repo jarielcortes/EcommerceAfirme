@@ -1,6 +1,8 @@
 # EcommerceAfirme
 Reto Digital NAO Afirme
 
+https://ecommerceafirme.onrender.com/
+
 
 # SPRINT 1
 
@@ -52,4 +54,26 @@ El objetivo del sprint 2 es implementar la navegación de la aplicación mediant
 
 ##### Lista Priorizada
 ![image](https://github.com/user-attachments/assets/fb4e91c8-840b-4692-b7e7-4e9f270f2a0e)
+
+### ROADMAP
+![Roadmap](https://github.com/user-attachments/assets/0f12479c-9046-46af-9da3-bec8e02c4544)
+
+### DISEÑO
+![image](https://github.com/user-attachments/assets/2617807e-9d33-48d0-b15d-af99dbfd5f6c)
+
+![image](https://github.com/user-attachments/assets/3b0b8437-4906-460a-9359-dd099240fce9)
+
+![image](https://github.com/user-attachments/assets/84b2bf94-b8c5-40a3-864f-bfbe2c561648)
+
+### ARQUITECTURA
+
+![image](https://github.com/user-attachments/assets/aa31254a-924e-49ed-82ef-82ea53f40c03)
+
+Para implementar Redux se utiliza la libería de Redux Tooklit para facilitar la creacion de actions y reducers, así como configuración. Se utilizan los archivos de slices y store para manejar el state y se integra en el componente de RegisterUser.jsx
+
+Como estrategia se genera un rootReducer para facilitar el import de los slices y se integra el dispatch para registrar un usuario y almacenarlo en una colección en memoria en el store.
+
+Los datos de los usuarios registrados se obtienen del mediante el selector del state, de esta forma se actualizan los registros en la tabla conforme se van registrando nuevos usuarios.
+
+Dentro del formulario de registro se utilizan las librerías de Formik y Yup para manipular el formulario.
 
