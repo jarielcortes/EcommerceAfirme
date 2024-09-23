@@ -5,7 +5,10 @@ import "./SalesChart.css";
 
 export function SalesChart({ data }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div
+      data-testid="sales-chart-widget"
+      className="bg-white p-6 rounded-lg shadow-md"
+    >
       <h2 className="text-xl font-semibold mb-4">Ventas</h2>
       <div className="h-40">
         <ResponsiveBar

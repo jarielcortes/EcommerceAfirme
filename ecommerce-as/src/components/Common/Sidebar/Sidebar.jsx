@@ -42,6 +42,7 @@ function Sidebar({ selectedItem, onSelectItem }) {
           />
         )}
         <button
+          aria-label="Toggle Sidebar"
           onClick={handleToggleSidebar}
           className="focus:outline-none"
           title={isCollapsed ? "Colapsar" : "Expandir"}

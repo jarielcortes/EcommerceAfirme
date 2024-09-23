@@ -29,7 +29,7 @@ function QuotationsListItem({ quotation, client, status }) {
         <span className="ml-4">{client}</span>
       </p>
       <span className={`badge ${colorClassBadge} !text-white`}>
-        {status.toUpperCase()}
+        {status ? status.toUpperCase() : ""}
       </span>
     </div>
   );

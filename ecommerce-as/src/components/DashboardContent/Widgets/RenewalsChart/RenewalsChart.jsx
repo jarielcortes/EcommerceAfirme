@@ -4,7 +4,10 @@ import "./RenewalsChart.css";
 
 export function RenewalsChart({ data }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div
+      data-testid="renewals-chart-widget"
+      className="bg-white p-6 rounded-lg shadow-md"
+    >
       <h2 className="text-xl font-semibold mb-4">Renovaciones</h2>
       <div className="h-40">
         <ResponsivePie

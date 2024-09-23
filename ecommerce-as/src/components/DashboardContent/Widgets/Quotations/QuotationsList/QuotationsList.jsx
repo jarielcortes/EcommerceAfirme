@@ -32,7 +32,10 @@ export function QuotationsList({ data }) {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div
+      data-testid="quotations-list-widget"
+      className="bg-white p-6 rounded-lg shadow-md"
+    >
       <h2 className="text-xl font-semibold mb-3">COTIZACIONES</h2>
       <div className="space-y-1">
         {/* Displays current items for selected page */}
