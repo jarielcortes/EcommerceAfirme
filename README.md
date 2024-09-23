@@ -3,6 +3,10 @@ Reto Digital NAO Afirme
 
 https://ecommerceafirme.onrender.com/
 
+Tabla de Contenido
+- [SPRINT 1](#sprint-1)
+- [SPRINT 2](#sprint-2)
+- [SPRINT 3](#sprint-3)
 
 # SPRINT 1
 
@@ -76,4 +80,11 @@ Como estrategia se genera un rootReducer para facilitar el import de los slices 
 Los datos de los usuarios registrados se obtienen del mediante el selector del state, de esta forma se actualizan los registros en la tabla conforme se van registrando nuevos usuarios.
 
 Dentro del formulario de registro se utilizan las librerías de Formik y Yup para manipular el formulario.
+
+---
+
+
+# SPRINT 3
+
+En Progreso
 
