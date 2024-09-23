@@ -86,5 +86,30 @@ Dentro del formulario de registro se utilizan las librerías de Formik y Yup par
 
 # SPRINT 3
 
-En Progreso
+El objetivo del sprint 3 es implementar los casos de prueba en la aplicación, así como generar un reporte de las pruebas de los principales componentes de la aplicacion. De igual manera se deberá de desplegar la aplicación en un servicio de host para acceder al portal desde internet.
+
+Reporte de Pruebas
+https://ecommerceafirme.onrender.com/test-report/report.html
+
+### BACKLOG
+
+##### Lista Priorizada
+![image](https://github.com/user-attachments/assets/0a6f5858-fc1e-4722-b389-faf87c22bffd)
+
+### ROADMAP
+![Copia de Copia de Concerned Entity Transportation companies](https://github.com/user-attachments/assets/1414f0a0-86d0-464e-98e2-b7dec631bfdb)
+
+### ARQUITECTURA
+
+![image](https://github.com/user-attachments/assets/abe24f70-7a39-4558-9804-ccf1be698e4e)
+
+Como parte de la arquitectura para los test cases, se utiliza la liberaría de React Test Library, en conjunto con Jest y se generan los test cases para los principales componentes de la aplicación (Sidebar, Dashboard y Registro de Usuarios).
+
+Para el reporte de test cases se configuró para que se exporte en formato HTML usando la librería jest-html-reporters y se guardan automáticamente al folder de public de la aplicación.
+
+Reporte de Pruebas
+https://ecommerceafirme.onrender.com/test-report/report.html
+
+![image](https://github.com/user-attachments/assets/33453339-3cfa-41b3-99dd-570accb29c56)
+
 
